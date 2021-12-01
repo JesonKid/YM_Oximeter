@@ -249,6 +249,7 @@ void GPIO_Config(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin,GPIO_MODE_E mode)
     }
 }
 
+
 /**
  *******************************************************************************
 ** \brief GPIO Pin set

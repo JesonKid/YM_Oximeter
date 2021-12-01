@@ -22,46 +22,49 @@
 #ifndef  __SEG_LED_DRV_H__
 #define  __SEG_LED_DRV_H__
 
+#include "tcasxxx.h"
+#include "gpio.h"
 #include "DataType.h"
 #include "pt.h"
 #include "pt-sem.h"
-/****************************************************************************
+
+
+/**
+* @brief 数码管相关IO口操作定义
 */
-#define LED1_PORT  GPIOPortA
-#define LED1_PIN   GPIOPin0
-#define LED2_PORT  GPIOPortA
-#define LED2_PIN   GPIOPin1
-#define LED3_PORT  GPIOPortB
-#define LED3_PIN   GPIOPin2
-#define LED4_PORT  GPIOPortB
-#define LED4_PIN   GPIOPin3
-#define LED5_PORT  GPIOPortB
-#define LED5_PIN   GPIOPin4    
-#define LED6_PORT  GPIOPortB
-#define LED6_PIN   GPIOPin5
-#define LED7_PORT  GPIOPortB
-#define LED7_PIN   GPIOPin6
-#define LED8_PORT  GPIOPortB
-#define LED8_PIN   GPIOPin7
-#define LED9_PORT  GPIOPortC
-#define LED9_PIN   GPIOPin7
 
-#define POS  TRUE
-#define NEG  FALSE
+#define LED1_PORT   GPIOPortA
+#define LED1_PIN    GPIOPin0
 
-extern uint8_t show_dir;
-extern uint8_t tick;
-extern BOOL tick_500ms;
+#define LED2_PORT   GPIOPortA
+#define LED2_PIN    GPIOPin1
 
-//线程
-extern struct pt pt_seg;
-extern struct pt pt_dig9;
+#define LED3_PORT   GPIOPortB
+#define LED3_PIN    GPIOPin2
 
-//轮询信号
-extern volatile struct pt_sem poll_sem; 
-extern volatile struct pt_sem slot_sem; 
+#define LED4_PORT   GPIOPortB
+#define LED4_PIN    GPIOPin3
 
-//数码管索引
+#define LED5_PORT   GPIOPortB
+#define LED5_PIN    GPIOPin4
+
+#define LED6_PORT   GPIOPortB
+#define LED6_PIN    GPIOPin5
+
+#define LED7_PORT   GPIOPortB
+#define LED7_PIN    GPIOPin6
+
+#define LED8_PORT   GPIOPortB
+#define LED8_PIN    GPIOPin7
+
+#define LED9_PORT   GPIOPortC
+#define LED9_PIN    GPIOPin7
+
+
+/**
+* @brief 数码管索引
+*/
+
 typedef enum
 {
     DIG_1,
@@ -74,7 +77,10 @@ typedef enum
     DIG_8,
     DIG_9
 } DIG_INDEX;
-//数码管索引
+
+/**
+* @brief PI指数水平
+*/
 
 typedef enum
 {
@@ -87,14 +93,17 @@ typedef enum
     LEVEL_6
 } STATE_LEVEL_T;
 
-/*
-*****************************************************************************/
+/**
+* @brief 初始化LED模组硬件
+*/
 
-/********************************************************
-@brief  state_led_show
-@param  显示的数字
-@retval void
-*********************************************************/
+void led_module_init(void);
+
+/**
+* @brief 显示PI指数
+* @param num：PI指数
+*/
+
 void state_led_show(uint8_t num);
 
 
