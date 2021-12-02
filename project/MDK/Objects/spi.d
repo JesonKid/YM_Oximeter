@@ -13,5 +13,3 @@
 .\objects\spi.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\spi.o: ..\driver\inc\DMA.h
-.\objects\spi.o: ..\driver\inc\gpio.h
-.\objects\spi.o: ..\driver\inc\interrupt.h

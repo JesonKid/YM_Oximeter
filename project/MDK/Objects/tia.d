@@ -12,5 +12,3 @@
 .\objects\tia.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\tia.o: ..\common\inc\system_tcasxxx.h
 .\objects\tia.o: ..\driver\inc\tia.h
-.\objects\tia.o: ..\driver\inc\gpio.h
-.\objects\tia.o: ..\driver\inc\interrupt.h

@@ -23,106 +23,50 @@
 #include "SegLedDriver.h"
 
 /**
-* @brief 初始化LED模组硬件
+* @brief 定义一个ledModule_t类对象
+*/
+ledModule_t ledModule;
+
+/**
+* @brief 定义显示初始化接口
 */
 
-void led_module_init(void)
+void dispInit(void)
 {
-   GPIO_ClrAFMode(LED1_PORT,LED1_PIN);
-   GPIO_ClrAFMode(LED2_PORT,LED2_PIN);
-   GPIO_ClrAFMode(LED3_PORT,LED3_PIN);
-   GPIO_ClrAFMode(LED4_PORT,LED4_PIN);
-   GPIO_ClrAFMode(LED5_PORT,LED5_PIN);
-   GPIO_ClrAFMode(LED6_PORT,LED6_PIN);
-   GPIO_ClrAFMode(LED7_PORT,LED7_PIN);
-   GPIO_ClrAFMode(LED8_PORT,LED8_PIN);
-   GPIO_ClrAFMode(LED9_PORT,LED9_PIN);
-}
+    GPIO_Init_t initStruct;
+    led_t *led = &ledModule.SpO2.tens.A;
+
+    led->init = GPIO_Init;
+    led->briSet = GPIO_20mA_Mode;
+
+    led->ioPort = GPIOPortA;
+    led->ioPin = GPIOPin0;
+
+    led->highLight = ENABLE;
+
+    led->briSet(led->ioPort,led->ioPin,led->highLight);
+
+    initStruct.GPIO_Port = led->ioPort ;
+    initStruct.GPIO_Pin = led->ioPin;
+    initStruct.GPIO_Ext_Mode = GPIO_PIN_PUSH_PULL;
+    //初始化为输入模式
+    initStruct.GPIO_Mode = GPIO_INPUT_MODE;
+    //无上下拉
+    initStruct.GPIO_Pull_Mode = GPIO_PULL_NONE;
+    led->init(&initStruct);
+    
+    ledModule.SpO2.tens.B = ledModule.SpO2.tens.A;
+    
 
 
-void state_led_show(uint8_t num)
-{
-
-}
-
-
-
-void digit_led_show(DIG_INDEX index, uint8_t num, BOOL point)
-{
-
-}
-
-
-
-void DIG1_show(uint8_t num, BOOL show_mirro_spo2)
-{
-
-}
-
-
-
-void DIG2_show(uint8_t num, BOOL show_mirro_bpm)
-{
 
 }
 
+/**
+* @brief 定义显示接口
+*/
 
-
-void DIG3_show(uint8_t num, BOOL show_pi)
-{
-
-}
-
-
-
-void DIG4_show(uint8_t num, BOOL show_spo2)
-{
-
-}
-
-
-
-void DIG5_show(uint8_t num, BOOL show_bpm)
-{
-
-}
-
-
-
-void DIG6_show(uint8_t num, BOOL show_mirro_pi)
-{
-
-}
-
-
-
-void DIG7_show(uint8_t num, BOOL show_battery)
-{
-
-}
-
-
-
-void DIG8_show(uint8_t num, BOOL show_s1)
-{
-
-}
-
-
-
-void DIG9_show(STATE_LEVEL_T level, BOOL show_heart)
-{
-
-}
-
-
-void thread_setup(void)
-{
-
-}
-
-
-void demo_show(void)
+void disp(void)
 {
 
 }

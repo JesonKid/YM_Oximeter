@@ -21,12 +21,3 @@
 .\objects\main.o: ..\midware\RTT\SEGGER_RTT_Conf.h
 .\objects\main.o: ..\driver\inc\interrupt.h
 .\objects\main.o: ..\driver\inc\wdg.h
-.\objects\main.o: ..\driver\inc\gpio.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\main.o: ..\driver\inc\delay.h
-.\objects\main.o: ..\driver\inc\rcc.h
-.\objects\main.o: ..\Users\SegLedDrivers\SegLedDriver.h
-.\objects\main.o: ..\midware\pt-1.4\pt-1.4\pt.h
-.\objects\main.o: ..\midware\pt-1.4\pt-1.4\lc.h
-.\objects\main.o: ..\midware\pt-1.4\pt-1.4\lc-switch.h
-.\objects\main.o: ..\midware\pt-1.4\pt-1.4\pt-sem.h

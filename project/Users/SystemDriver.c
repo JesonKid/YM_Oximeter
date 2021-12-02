@@ -107,70 +107,11 @@ static void SYS_GPIO_Init(void)
     GPIO_SetAFMode(GPIOPortC, GPIOPin4, AF_ANALOG);
     GPIO_SetAFMode(GPIOPortC, GPIOPin5, AF_ANALOG);
 
-    /**************** LCM模组GPIO配置 *******************************/
-    GPIO_ClrAFMode(LED1_PORT, LED1_PIN);
-    GPIO_ClrAFMode(LED2_PORT, LED2_PIN);
-    GPIO_ClrAFMode(LED3_PORT, LED3_PIN);
-    GPIO_ClrAFMode(LED4_PORT, LED4_PIN);
-    GPIO_SetAFMode(LED5_PORT, LED5_PIN, AF0);  //SWDIO -- IO
-    GPIO_SetAFMode(LED6_PORT, LED6_PIN, AF0);  //SWCLK -- IO
-    GPIO_ClrAFMode(LED7_PORT, LED7_PIN);
-    GPIO_ClrAFMode(LED8_PORT, LED8_PIN);
-    GPIO_ClrAFMode(LED9_PORT, LED9_PIN);
-
-    gpio_init.GPIO_Port = LED1_PORT;
-    gpio_init.GPIO_Pin  = LED1_PIN;
-    gpio_init.GPIO_Mode = GPIO_OUTPUT_MODE;
-    gpio_init.GPIO_Ext_Mode = GPIO_PIN_PUSH_PULL;
-    gpio_init.GPIO_Pull_Mode = GPIO_PULL_NONE;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED1_PORT, LED1_PIN);
-
-    gpio_init.GPIO_Port = LED2_PORT;
-    gpio_init.GPIO_Pin  = LED2_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED2_PORT, LED2_PIN);
-
-    gpio_init.GPIO_Port = LED3_PORT;
-    gpio_init.GPIO_Pin  = LED3_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED3_PORT, LED3_PIN);
-
-    gpio_init.GPIO_Port = LED4_PORT;
-    gpio_init.GPIO_Pin  = LED4_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED4_PORT, LED4_PIN);
-
-    gpio_init.GPIO_Port = LED5_PORT;
-    gpio_init.GPIO_Pin  = LED5_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED5_PORT, LED5_PIN);
-
-    gpio_init.GPIO_Port = LED6_PORT;
-    gpio_init.GPIO_Pin  = LED6_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED6_PORT, LED6_PIN);
-
-    gpio_init.GPIO_Port = LED7_PORT;
-    gpio_init.GPIO_Pin  = LED7_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED7_PORT, LED7_PIN);
-
-    gpio_init.GPIO_Port = LED8_PORT;
-    gpio_init.GPIO_Pin  = LED8_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED8_PORT, LED8_PIN);
-
-    gpio_init.GPIO_Port = LED9_PORT;
-    gpio_init.GPIO_Pin  = LED9_PIN;
-    GPIO_Init(&gpio_init);
-    GPIO_SetBits(LED9_PORT, LED9_PIN);
 
     /****************红外光接收GPIO配置 *******************************/
     // OP0 INP & OP0 INN & OP0 OUT(PC.6)
     GPIO_SetAFMode(GPIOPortC, GPIOPin6, AF_ANALOG);
     // OP2 INP(PD.0) & OP2 OUT(PD.1)
-    //GPIO_SetAFMode(GPIOPortC, GPIOPin7, AF_ANALOG);
     GPIO_SetAFMode(GPIOPortD, GPIOPin0, AF_ANALOG);
     GPIO_SetAFMode(GPIOPortD, GPIOPin1, AF_ANALOG);
     // ADC sample for SPO2 (PA.2)

@@ -11,8 +11,3 @@
 .\objects\trim.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
 .\objects\trim.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
 .\objects\trim.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
-.\objects\trim.o: ..\driver\inc\gpio.h
-.\objects\trim.o: ..\driver\inc\interrupt.h
-.\objects\trim.o: ..\driver\inc\rtc.h
-.\objects\trim.o: ..\driver\inc\delay.h
-.\objects\trim.o: ..\common\inc\system_tcasxxx.h

@@ -16,4 +16,3 @@
 .\objects\i2c.o: ..\driver\inc\interrupt.h
 .\objects\i2c.o: ..\driver\inc\i2c.h
 .\objects\i2c.o: ..\driver\inc\delay.h
-.\objects\i2c.o: ..\driver\inc\gpio.h

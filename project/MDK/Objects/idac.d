@@ -12,5 +12,3 @@
 .\objects\idac.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
 .\objects\idac.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\idac.o: ..\driver\inc\trim.h
-.\objects\idac.o: ..\driver\inc\gpio.h
-.\objects\idac.o: ..\driver\inc\interrupt.h

@@ -15,4 +15,3 @@
 .\objects\uart.o: ..\driver\inc\dma.h
 .\objects\uart.o: ..\driver\inc\interrupt.h
 .\objects\uart.o: ..\driver\inc\trim.h
-.\objects\uart.o: ..\driver\inc\gpio.h

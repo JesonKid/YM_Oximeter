@@ -1,6 +1,6 @@
 Dependencies for Project 'Oximeter_example', Target 'Oximeter_example': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\Users\SystemDriver.c)(0x61A48A22)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Users -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\systemdriver.o --omf_browse .\objects\systemdriver.crf --depend .\objects\systemdriver.d)
+F (..\Users\SystemDriver.c)(0x61A8721D)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Users -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\systemdriver.o --omf_browse .\objects\systemdriver.crf --depend .\objects\systemdriver.d)
 I (..\Users\SystemDriver.h)(0x61A0AB52)
 I (..\Users\DataType.h)(0x61947617)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
@@ -8,13 +8,7 @@ I (..\Users\Algorithm\Spo2Interface.h)(0x61947617)
 I (..\Users\FuncDrivers\Preprocess.h)(0x61947617)
 I (..\Users\OledDrivers\DisplayDriver.h)(0x61947617)
 I (..\Users\OledDrivers\UG2864Driver.h)(0x61947617)
-I (..\Users\SegLedDrivers\SegLedDriver.h)(0x61A71801)
-I (..\midware\pt-1.4\pt-1.4\pt.h)(0x4520C558)
-I (..\midware\pt-1.4\pt-1.4\lc.h)(0x421DAE4C)
-I (..\midware\pt-1.4\pt-1.4\lc-switch.h)(0x448172A8)
-I (..\midware\pt-1.4\pt-1.4\pt-sem.h)(0x421DAE4C)
-I (..\Users\FuncDrivers\DefaultSetup.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
+I (..\Users\SegLedDrivers\SegLedDriver.h)(0x61A8892B)
 I (..\common\inc\tcasxxx.h)(0x61947617)
 I (..\common\inc\base_types.h)(0x61947617)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
@@ -25,22 +19,13 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (..\driver\inc\drv_gpio.h)(0x61A87177)
 I (..\driver\inc\interrupt.h)(0x619F757E)
-I (..\driver\inc\saradc.h)(0x61947617)
-I (..\driver\inc\spi.h)(0x61947617)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9AD218)
-I (..\driver\inc\DMA.h)(0x61947617)
-I (..\driver\inc\cmp.h)(0x61947617)
-I (..\driver\inc\op.h)(0x61947617)
-I (..\driver\inc\tia.h)(0x61947617)
-I (..\driver\inc\timer.h)(0x61947617)
-I (..\driver\inc\flash.h)(0x61947617)
-I (..\midware\inc\trace.h)(0x619B0673)
-I (..\common\inc\system_tcasxxx.h)(0x61947617)
-I (..\driver\inc\uart.h)(0x61947617)
-I (..\midware\RTT\SEGGER_RTT.h)(0x61947617)
-I (..\midware\RTT\SEGGER_RTT_Conf.h)(0x61947617)
-I (..\driver\inc\wdg.h)(0x61947617)
+I (..\midware\pt-1.4\pt-1.4\pt.h)(0x4520C558)
+I (..\midware\pt-1.4\pt-1.4\lc.h)(0x421DAE4C)
+I (..\midware\pt-1.4\pt-1.4\lc-switch.h)(0x448172A8)
+I (..\midware\pt-1.4\pt-1.4\pt-sem.h)(0x421DAE4C)
+I (..\Users\FuncDrivers\DefaultSetup.h)(0x61947617)
 F (..\Users\main.c)(0x61A717AF)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Users -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Users\DataType.h)(0x61947617)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
@@ -64,29 +49,7 @@ I (..\midware\RTT\SEGGER_RTT.h)(0x61947617)
 I (..\midware\RTT\SEGGER_RTT_Conf.h)(0x61947617)
 I (..\driver\inc\interrupt.h)(0x619F757E)
 I (..\driver\inc\wdg.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9AD218)
-I (..\driver\inc\delay.h)(0x61947617)
-I (..\driver\inc\rcc.h)(0x61947617)
-I (..\Users\SegLedDrivers\SegLedDriver.h)(0x61A71801)
-I (..\midware\pt-1.4\pt-1.4\pt.h)(0x4520C558)
-I (..\midware\pt-1.4\pt-1.4\lc.h)(0x421DAE4C)
-I (..\midware\pt-1.4\pt-1.4\lc-switch.h)(0x448172A8)
-I (..\midware\pt-1.4\pt-1.4\pt-sem.h)(0x421DAE4C)
-F (..\driver\src\gpio.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\common\inc\tcasxxx.h)(0x61947617)
-I (..\common\inc\base_types.h)(0x61947617)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5D9AD212)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0.h)(0x5D2590B6)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\interrupt.h)(0x619F757E)
+F (..\driver\src\gpio.c)(0x00000000)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
 F (..\driver\src\delay.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (..\driver\inc\delay.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -132,7 +95,6 @@ I (..\driver\inc\uart.h)(0x61947617)
 I (..\driver\inc\dma.h)(0x61947617)
 I (..\driver\inc\interrupt.h)(0x619F757E)
 I (..\driver\inc\trim.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
 F (..\driver\src\i2c.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
 I (..\common\inc\tcasxxx.h)(0x61947617)
 I (..\common\inc\base_types.h)(0x61947617)
@@ -151,7 +113,6 @@ I (..\driver\inc\dma.h)(0x61947617)
 I (..\driver\inc\interrupt.h)(0x619F757E)
 I (..\driver\inc\i2c.h)(0x61947617)
 I (..\driver\inc\delay.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
 F (..\driver\src\vdac.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\vdac.o --omf_browse .\objects\vdac.crf --depend .\objects\vdac.d)
 I (..\driver\inc\vdac.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -166,8 +127,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
 I (..\driver\inc\trim.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\op.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\op.o --omf_browse .\objects\op.crf --depend .\objects\op.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\common\inc\system_tcasxxx.h)(0x61947617)
@@ -182,8 +141,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\tia.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\tia.o --omf_browse .\objects\tia.crf --depend .\objects\tia.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -198,8 +155,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
 I (..\common\inc\system_tcasxxx.h)(0x61947617)
 I (..\driver\inc\tia.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\saradc.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\saradc.o --omf_browse .\objects\saradc.crf --depend .\objects\saradc.d)
 I (..\driver\inc\saradc.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -256,7 +211,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
 I (..\driver\inc\interrupt.h)(0x619F757E)
-I (..\driver\inc\gpio.h)(0x61947617)
 F (..\driver\src\divider.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\divider.o --omf_browse .\objects\divider.crf --depend .\objects\divider.d)
 I (..\common\inc\system_tcasxxx.h)(0x61947617)
 I (..\common\inc\base_types.h)(0x61947617)
@@ -299,8 +253,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
 I (..\driver\inc\trim.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\interrupt.c)(0x61A71786)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\interrupt.o --omf_browse .\objects\interrupt.crf --depend .\objects\interrupt.d)
 I (..\driver\inc\interrupt.h)(0x619F757E)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -314,26 +266,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\Users\DataType.h)(0x61947617)
-I (..\Users\FuncDrivers\Preprocess.h)(0x61947617)
-I (..\Users\Algorithm\Spo2Interface.h)(0x61947617)
-I (..\Users\FuncDrivers\LightDriver.h)(0x61947617)
-I (..\Users\FuncDrivers\DefaultSetup.h)(0x61947617)
-I (..\Users\OledDrivers\UG2864Driver.h)(0x61947617)
-I (..\Users\BuzzDrivers\BuzzDriver.h)(0x61947617)
-I (..\Users\OledDrivers\DisplayDriver.h)(0x61947617)
-I (..\Users\SegLedDrivers\SegLedDriver.h)(0x61A71801)
-I (..\midware\pt-1.4\pt-1.4\pt.h)(0x4520C558)
-I (..\midware\pt-1.4\pt-1.4\lc.h)(0x421DAE4C)
-I (..\midware\pt-1.4\pt-1.4\lc-switch.h)(0x448172A8)
-I (..\midware\pt-1.4\pt-1.4\pt-sem.h)(0x421DAE4C)
-I (..\Users\SystemDriver.h)(0x61A0AB52)
-I (..\driver\inc\saradc.h)(0x61947617)
-I (..\driver\inc\dma.h)(0x61947617)
-I (..\driver\inc\uart.h)(0x61947617)
-I (..\common\inc\system_tcasxxx.h)(0x61947617)
-I (..\Users\BlueToothDrivers\BluetoothDriver.h)(0x61947617)
 F (..\driver\src\lpm.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\lpm.o --omf_browse .\objects\lpm.crf --depend .\objects\lpm.d)
 I (..\common\inc\tcasxxx.h)(0x61947617)
 I (..\common\inc\base_types.h)(0x61947617)
@@ -347,8 +279,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
 I (..\driver\inc\lpm.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\lvd.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\lvd.o --omf_browse .\objects\lvd.crf --depend .\objects\lvd.d)
 I (..\driver\inc\lvd.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -362,8 +292,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\rtc.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
 I (..\driver\inc\rtc.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -392,8 +320,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9AD218)
 I (..\driver\inc\DMA.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\driver\src\trim.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\trim.o --omf_browse .\objects\trim.crf --depend .\objects\trim.d)
 I (..\driver\inc\trim.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -407,11 +333,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
-I (..\driver\inc\rtc.h)(0x61947617)
-I (..\driver\inc\delay.h)(0x61947617)
-I (..\common\inc\system_tcasxxx.h)(0x61947617)
 F (..\driver\src\wdg.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\wdg.o --omf_browse .\objects\wdg.crf --depend .\objects\wdg.d)
 I (..\driver\inc\wdg.h)(0x61947617)
 I (..\common\inc\tcasxxx.h)(0x61947617)
@@ -548,8 +469,6 @@ I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\c
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\Users\OledDrivers\fontlibs.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\fontlibs.o --omf_browse .\objects\fontlibs.crf --depend .\objects\fontlibs.d)
 I (..\Users\OledDrivers\fontlibs.h)(0x61947617)
 I (..\Users\DataType.h)(0x61947617)
@@ -559,38 +478,30 @@ I (..\Users\OledDrivers\UG2864Driver.h)(0x61947617)
 I (..\Users\DataType.h)(0x61947617)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
 I (..\Users\FuncDrivers\DefaultSetup.h)(0x61947617)
-I (..\driver\inc\gpio.h)(0x61947617)
+F (..\Users\SegLedDrivers\SegLedDriver.c)(0x61A88B61)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\segleddriver.o --omf_browse .\objects\segleddriver.crf --depend .\objects\segleddriver.d)
+I (..\Users\SegLedDrivers\SegLedDriver.h)(0x61A8892B)
 I (..\common\inc\tcasxxx.h)(0x61947617)
 I (..\common\inc\base_types.h)(0x61947617)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5D9AD212)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
 I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (..\driver\inc\drv_gpio.h)(0x61A87177)
 I (..\driver\inc\interrupt.h)(0x619F757E)
-I (..\driver\inc\spi.h)(0x61947617)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9AD218)
-I (..\driver\inc\DMA.h)(0x61947617)
-F (..\Users\SegLedDrivers\SegLedDriver.c)(0x61A71683)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\segleddriver.o --omf_browse .\objects\segleddriver.crf --depend .\objects\segleddriver.d)
+I (..\Users\DataType.h)(0x61947617)
+I (..\midware\pt-1.4\pt-1.4\pt.h)(0x4520C558)
+I (..\midware\pt-1.4\pt-1.4\lc.h)(0x421DAE4C)
+I (..\midware\pt-1.4\pt-1.4\lc-switch.h)(0x448172A8)
+I (..\midware\pt-1.4\pt-1.4\pt-sem.h)(0x421DAE4C)
 F (..\Users\BlueToothDrivers\BluetoothDriver.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\bluetoothdriver.o --omf_browse .\objects\bluetoothdriver.crf --depend .\objects\bluetoothdriver.d)
 I (..\Users\BlueToothDrivers\BluetoothDriver.h)(0x61947617)
 I (..\Users\DataType.h)(0x61947617)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (..\driver\inc\gpio.h)(0x61947617)
-I (..\common\inc\tcasxxx.h)(0x61947617)
-I (..\common\inc\base_types.h)(0x61947617)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
-I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5D9AD212)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0.h)(0x5D2590B6)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
-I (C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
-I (..\driver\inc\interrupt.h)(0x619F757E)
 F (..\Users\BuzzDrivers\BuzzDriver.c)(0x61947617)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\common\inc -I ..\driver\inc -I ..\midware\inc -I ..\Users -I ..\Users\Algorithm -I ..\Users\FuncDrivers -I ..\Users\BlueToothDrivers -I ..\Users\BuzzDrivers -I ..\Users\OledDrivers -I ..\midware\RTT -I ..\Users\SegLedDrivers -I ..\midware\pt-1.4\pt-1.4-I.\RTE\_Oximeter_example-IC:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\longten\AppData\Local\Arm\Packs\Keil\TCASxxx\1.1.6\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DFUNC_RESP -DFUNC_DIAGNOSE-o .\objects\buzzdriver.o --omf_browse .\objects\buzzdriver.crf --depend .\objects\buzzdriver.d)
 I (..\Users\BuzzDrivers\BuzzDriver.h)(0x61947617)
 I (..\Users\DataType.h)(0x61947617)

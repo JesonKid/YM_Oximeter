@@ -58,6 +58,16 @@ typedef enum GPIO_PIN_ENUM
 
 } GPIO_PIN_ENUM_E;
 
+/**
+* @brief  GPIO Bit SET and Bit RESET enumeration
+*/
+
+typedef enum
+{
+    Bit_RESET = 0,
+    Bit_SET
+} BitAction;
+
 typedef enum GPIO_AF_ENUM
 {
     AF0 = 1u,
@@ -104,7 +114,6 @@ typedef enum GPIO_INDEX_ENUM
     GPIO_INDEX_25,
     GPIO_INDEX_MAX
 } GPIO_INDEX_E;
-
 
 
 typedef enum GPIO_MODE
@@ -172,9 +181,10 @@ typedef struct
 
 
 
-void GPIO_Config(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin,GPIO_MODE_E mode);
+void GPIO_Config(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin, GPIO_MODE_E mode);
 void GPIO_SetBits(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
 void GPIO_ClearBits(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
+void GPIO_WriteBit(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin, BitAction BitVal);
 uint8_t GPIO_GetBit(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
 void GPIO_ToggleBits(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
 uint8_t GPIO_SetAFMode(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin, GPIO_AF_ENUM_E Af);
@@ -185,12 +195,12 @@ uint8_t GPIO_ClrAFMode(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
 void GPIO_SwitchOffIe(void);
 
 
-void GPIO_Init(GPIO_Init_t * pInitSt);
+void GPIO_Init(GPIO_Init_t *pInitSt);
 void GPIO_ITConfig(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin, GPIO_IT_MODE_E mode, ISRFunc_T vector);
 uint8_t GPIO_GetITStatus(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
 void GPIO_ClearITBit(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin);
-void GPIO_ExtModeConfig(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin,GPIO_EXT_MODE_E Ext_Mode,GPIO_PUSH_PULL_MODE_E Pull_Mode);
-void GPIO_20mA_Mode(GPIO_20MA_MODE_E PortPin,uint8_t En);
+void GPIO_ExtModeConfig(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin, GPIO_EXT_MODE_E Ext_Mode, GPIO_PUSH_PULL_MODE_E Pull_Mode);
+void GPIO_20mA_Mode(GPIO_PORT_ENUM_E Port, GPIO_PIN_ENUM_E Pin, FunctionalState En);
 
 #ifdef __cplusplus
 }

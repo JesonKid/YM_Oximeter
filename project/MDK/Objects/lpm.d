@@ -11,5 +11,3 @@
 .\objects\lpm.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
 .\objects\lpm.o: C:\Users\longten\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\lpm.o: ..\driver\inc\lpm.h
-.\objects\lpm.o: ..\driver\inc\gpio.h
-.\objects\lpm.o: ..\driver\inc\interrupt.h
