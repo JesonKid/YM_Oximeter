@@ -56,7 +56,7 @@ static void dispBarThread(pt *pt);
 * @brief 线程启动
 */
 
-static void threadSetup(void)
+static void threadSetup(void);
 
 /**
 * @brief 定义底层初始化接口
@@ -349,6 +349,7 @@ void defaultCfg(void)
 
 void dispInit(void)
 {
+    threadSetup();
     //底层初始化
     void (*init)(void) = ledModule.lowLevel.init;
     init = lowLevelInit;
@@ -381,7 +382,37 @@ void disp(void)
 static void dispSpO2Thread(pt *pt)
 {
     PT_BEGIN(pt);
-    PT_WAIT_UNTIL(pt,);
+    //等待信号
+    PT_SEM_WAIT(pt, &segSwitch);
+    //等到信号
+    //处理显示逻辑
+    if (ledModule.SpO2.isShowNum == FALSE)
+    {
+        //设置为输入
+        ledModule.SpO2.tens.A->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.A->dirSet(ledModule.SpO2.tens.A->ioPort,ledModule.SpO2.tens.A->ioPin,ledModule.SpO2.tens.A->dir);
+        ledModule.SpO2.tens.B->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.B->dirSet(ledModule.SpO2.tens.B->ioPort,ledModule.SpO2.tens.B->ioPin,ledModule.SpO2.tens.B->dir);
+        ledModule.SpO2.tens.C->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.C->dirSet(ledModule.SpO2.tens.C->ioPort,ledModule.SpO2.tens.C->ioPin,ledModule.SpO2.tens.C->dir);
+        ledModule.SpO2.tens.D->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.D->dirSet(ledModule.SpO2.tens.D->ioPort,ledModule.SpO2.tens.D->ioPin,ledModule.SpO2.tens.D->dir);
+        ledModule.SpO2.tens.E->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.E->dirSet(ledModule.SpO2.tens.E->ioPort,ledModule.SpO2.tens.E->ioPin,ledModule.SpO2.tens.E->dir);
+        ledModule.SpO2.tens.F->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.F->dirSet(ledModule.SpO2.tens.F->ioPort,ledModule.SpO2.tens.F->ioPin,ledModule.SpO2.tens.F->dir);
+        ledModule.SpO2.tens.G->dir   = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.G->dirSet(ledModule.SpO2.tens.G->ioPort,ledModule.SpO2.tens.G->ioPin,ledModule.SpO2.tens.G->dir);
+        ledModule.SpO2.tens.DP->dir  = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.DP->dirSet(ledModule.SpO2.tens.DP->ioPort,ledModule.SpO2.tens.DP->ioPin,ledModule.SpO2.tens.DP->dir);
+        ledModule.SpO2.tens.COM->dir = GPIO_INPUT_MODE;
+        ledModule.SpO2.tens.COM->dirSet(ledModule.SpO2.tens.COM->ioPort,ledModule.SpO2.tens.COM->ioPin,ledModule.SpO2.tens.COM->dir);
+        if(ledModule.SpO2.isShowReverseBpmSign == TRUE && ledModule.showDir == Normal)
+    }
+    else
+    {
+
+    }
     PT_END(pt);
 }
 
@@ -418,7 +449,12 @@ static void dispBarThread(pt *pt)
 
 static void threadSetup(void)
 {
-
+    PT_INIT(&pt_spo2);
+    PT_INIT(&pt_bpm);
+    PT_INIT(&pt_pi);
+    PT_INIT(&pt_bar);
+    //初始化信号标为0
+    PT_SEM_INIT(&segSwitch, 0);
 }
 
 
